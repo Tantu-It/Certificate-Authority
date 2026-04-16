@@ -1,45 +1,40 @@
-Digital Certificate Management System (Certificate Authority)
-This project is a web-based application designed to provide information about digital certificate systems, the role of Certificate Authorities (CA), and related security services. The system features a modern user interface with basic integrated authentication.
+# Certificate Authority Management System
+![UTH](https://img.shields.io/badge/University-UTH-blue) ![Status](https://img.shields.io/badge/Status-Completed-success)
+
 ---
-📌 Project Overview
-Project Name: Certificate Authority.
 
-Objective: To provide a platform for learning about information security, SSL/TLS certificates, and digital signatures.
+## 📌 Project Overview
+This project is a web application providing insights into Digital Certificate Authorities. It is designed with a focus on information security and user authentication.
 
-Tech Stack:
-
-Frontend: HTML5, CSS3 (Custom styles & Tailwind CSS).
-
-Icons & Fonts: Font Awesome, Google Fonts (Roboto).
-
-Scripting: JavaScript (ES6).
-
-Storage: LocalStorage (used for maintaining login states).
 ---
-✨ Key Features
-User Authentication: The system requires a login to access the main content.
 
-Home Page (Index): Introduces the concepts, roles, and operational processes of a CA.
+## ✨ Key Features
+| Feature | Description |
+| :--- | :--- |
+| **Authentication** | Secure login using `localStorage` and `script.js`. |
+| **Responsive UI** | Built with Tailwind CSS for mobile and desktop compatibility. |
+| **Information** | Comprehensive guide on SSL/TLS and Digital Signatures. |
 
-About Page: Detailed information on the importance of digital certificates and offered services.
-
-Contact Page: A form for users to send inquiries to the support team.
-
-Responsive Design: The interface is optimized for both desktop and mobile devices.
 ---
-🛠 Installation and Usage
 
-Login Credentials:
+## 🛠 Usage Instructions
 
-Username: nhom15
+### 1. Credentials
+To access the system, please use the following credentials:
+* **Username:** `nhom15`
+* **Password:** `123`
 
-Password: 123
+### 2. Execution
+Simply open `login.html` in your favorite browser.
 
-(Note: The system validates login conditions via script.js and stores the session state in localStorage).
 ---
-🛡 Security and Navigation
-The project utilizes a window.onload mechanism to ensure that unauthenticated users are automatically redirected to login.html.
 
-When clicking Logout, the system clears all data in localStorage to secure the session.
+## 🛡 Business Logic (BA Perspective)
+The application follows a strict authentication flow:
+1. **Login Validation:** Checks input against predefined constants.
+2. **Session Management:** Stores `isLoggedIn` flag in the browser's Local Storage.
+3. **Route Guard:** Each page (`index`, `about`, `contact`) verifies the session on load.
 
-Developed by: Group 15 - UTH (University of Transport and Communications Ho Chi Minh City).
+---
+
+**Developed by:** Group 15 - IT & Data Science - UTH
