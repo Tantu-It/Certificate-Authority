@@ -1,12 +1,12 @@
-Hệ Thống Quản Lý Chứng Chỉ Số (Certificate Authority Management System)
-Dự án này là một ứng dụng web cơ bản nhằm cung cấp thông tin về hệ thống chứng chỉ số, vai trò của tổ chức phát hành chứng chỉ (CA) và các dịch vụ bảo mật liên quan. Hệ thống bao gồm giao diện người dùng hiện đại, tích hợp xác thực đăng nhập cơ bản.
+Digital Certificate Management System (Certificate Authority)
+This project is a web-based application designed to provide information about digital certificate systems, the role of Certificate Authorities (CA), and related security services. The system features a modern user interface with basic integrated authentication.
 
-📌 Giới thiệu dự án
-Tên dự án: Certificate Authority (Chứng Chỉ Số)
+📌 Project Overview
+Project Name: Certificate Authority.
 
-Mục tiêu: Cung cấp nền tảng kiến thức về bảo mật thông tin, SSL/TLS, và chữ ký điện tử.
+Objective: To provide a platform for learning about information security, SSL/TLS certificates, and digital signatures.
 
-Công nghệ sử dụng:
+Tech Stack:
 
 Frontend: HTML5, CSS3 (Custom styles & Tailwind CSS).
 
@@ -14,47 +14,40 @@ Icons & Fonts: Font Awesome, Google Fonts (Roboto).
 
 Scripting: JavaScript (ES6).
 
-Lưu trữ: LocalStorage (dùng để duy trì trạng thái đăng nhập).
+Storage: LocalStorage (used for maintaining login states).
 
-✨ Các tính năng chính
-Xác thực người dùng: Hệ thống yêu cầu đăng nhập để truy cập nội dung.
+✨ Key Features
+User Authentication: The system requires a login to access the main content.
 
-Trang chủ (Index): Giới thiệu khái niệm, vai trò và quy trình hoạt động của CA.
+Home Page (Index): Introduces the concepts, roles, and operational processes of a CA.
 
-Giới thiệu (About): Chi tiết về tầm quan trọng của chứng chỉ số và các dịch vụ cung cấp.
+About Page: Detailed information on the importance of digital certificates and offered services.
 
-Liên hệ (Contact): Biểu mẫu gửi phản hồi cho đội ngũ hỗ trợ.
+Contact Page: A form for users to send inquiries to the support team.
 
-Responsive Design: Giao diện hiển thị tốt trên cả máy tính và thiết bị di động.
+Responsive Design: The interface is optimized for both desktop and mobile devices.
 
-🛠 Hướng dẫn cài đặt và sử dụng
-1. Chuẩn bị
-Bạn không cần cài đặt môi trường server phức tạp, dự án này chạy trực tiếp trên trình duyệt.
+🛠 Installation and Usage
 
-2. Cách chạy dự án
-Tải toàn bộ thư mục dự án về máy tính.
+Login Credentials:
 
-Mở tệp login.html bằng trình duyệt web (Chrome, Edge, Firefox).
+Username: nhom15
 
-Thông tin đăng nhập:
+Password: 123
 
-Tên đăng nhập: nhom15
+(Note: The system validates login conditions via script.js and stores the session state in localStorage).
 
-Mật khẩu: 123
-
-(Lưu ý: Hệ thống kiểm tra điều kiện đăng nhập qua tệp script.js và lưu trạng thái vào localStorage).
-
-3. Cấu trúc thư mục
+3. Folder Structure
 Plaintext
-├── index.html      # Trang chủ (Thông tin chính)
-├── about.html      # Trang giới thiệu chi tiết
-├── contact.html    # Trang liên hệ
-├── login.html      # Trang đăng nhập
-├── style.css       # Tệp định dạng giao diện tùy chỉnh
-└── script.js      # Xử lý logic đăng nhập/đăng xuất
-🛡 Bảo mật và Điều hướng
-Dự án sử dụng cơ chế kiểm tra window.onload để đảm bảo người dùng chưa đăng nhập sẽ bị chuyển hướng về trang login.html.
+├── index.html      # Home page (Core information)
+├── about.html      # Detailed introduction page
+├── contact.html    # Contact and support page
+├── login.html      # Authentication page
+├── style.css       # Custom UI styling
+└── script.js       # Logic for Login/Logout
+🛡 Security and Navigation
+The project utilizes a window.onload mechanism to ensure that unauthenticated users are automatically redirected to login.html.
 
-Khi nhấn Đăng xuất, hệ thống sẽ xóa sạch dữ liệu trong localStorage để bảo mật thông tin phiên làm việc.
+When clicking Logout, the system clears all data in localStorage to secure the session.
 
-Được thực hiện bởi: Nhóm 15 - UTH (University of Transport and Communications Ho Chi Minh City)
+Developed by: Group 15 - UTH (University of Transport and Communications Ho Chi Minh City).
